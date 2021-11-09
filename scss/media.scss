@@ -1,0 +1,146 @@
+@media (max-width: 1200px) {
+  .header__burger {
+    margin: 0 0 0 40px;
+    display: block;
+    width: 30px;
+    height: 20px;
+    position: relative;
+    z-index: 5;
+  }
+  .header__burger::before,
+  .header__burger::after {
+    transition: all 0.3s ease 0s;
+    content: "";
+    background-color: #ff6e40;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+  }
+  .header__burger::before {
+    top: 0;
+  }
+  .header__burger::after {
+    bottom: 0;
+  }
+  .header__burger span {
+    transition: all 0.3s ease 0s;
+    background-color: #ff6e40;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+  }
+  .header__burger.active::before {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+  .header__burger.active::after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+  .header__burger.active span {
+    transform: scale(0);
+  }
+  body.lock {
+    overflow: hidden;
+  }
+  .header__menu {
+    z-index: 2;
+    position: fixed;
+    top: -100%;
+    left: 0;
+    transition: all 0.3s ease 0s;
+    width: 100%;
+    height: 100%;
+    background-color: #3b322d;
+    padding: 70px 10px 20px 10px;
+    overflow: auto;
+    .header__menu__list {
+      flex-direction: column;
+      align-items: center;
+      li {
+        margin: 0 0 40px 0;
+      }
+      .header__menu__link {
+        font-size: 35px;
+      }
+    }
+  }
+  .header__menu-active {
+    top: 0;
+  }
+  .mens__row {
+    margin: 0 -20px;
+  }
+  .mens-top {
+    flex-direction: column;
+  }
+  .mens-top__left {
+    flex: 0 0 auto;
+  }
+  .mens-top__right__text {
+    margin: 0 0 28px 0;
+    width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .header__logo__img {
+    margin: 0 10px 0 0;
+  }
+  /*.header__location {
+    margin: 0 25px 0 0;
+  }
+  .header__location__text {
+    margin: 0 10px 0 0;
+    font-size: 12px !important;
+  }
+  .header__phone__number {
+    font-size: 14px;
+  }
+  .header__phone__mode {
+    font-size: 12px;
+  }*/
+  .header__location {
+    display: none;
+  }
+  .header__phone {
+    display: none;
+  }
+  .mens__row {
+    height: 100%;
+  }
+  .mens-top__left__title {
+    font-size: 40px;
+  }
+  .columns__row {
+    padding: 300px 0 20px 0;
+  }
+  .columns__column {
+    flex: 0 0 100%;
+  }
+  .column__item {
+    width: 100%;
+  }
+  .column__title {
+    text-align: center;
+  }
+  .about__columns {
+    margin: 0;
+    img {
+      margin: 0 0 20px 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .about__columns-left__top {
+    margin: 0;
+  }
+  .about__columns-right__top {
+    margin: 0;
+  }
+  .about__btn1 {
+    margin: 0 0 20px 0;
+  }
+}
