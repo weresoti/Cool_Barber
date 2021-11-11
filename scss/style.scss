@@ -294,7 +294,7 @@ body {
 }
 .mens-bottom__btn {
   &:hover {
-    background: #d86c4c;
+    cursor: url('../img/mens/ellipse.png'), auto;
   }
 }
 .btn_orange {
@@ -425,7 +425,7 @@ body {
 .about__btn1 {
   margin: 0 30px 0 0;
   &:hover {
-    background: #d86c4c;
+    cursor: url('../img/mens/ellipse.png'), auto;
   }
 }
 .btn_orange {
@@ -491,6 +491,10 @@ body {
   color: #ff6e40;
   font-size: 14px;
   line-height: 135%;
+  &:hover {
+    transition: all 0.3s ease 0s;
+    color: #000;
+  }
 }
 
 /*Our*/ ///////////////////////////////////////////////////////////////////////
@@ -517,7 +521,7 @@ body {
 }
 .our__column {
   padding: 0 10px;
-  margin: 0 0 30px 0; 
+  margin: 0 0 30px 0;
   flex: 0 0 280px;
 }
 .our__item {
@@ -544,7 +548,7 @@ body {
   position: relative;
   &:after {
     content: "";
-    background: #B7AAA2;
+    background: #b7aaa2;
     width: 1px;
     height: 100%;
     position: absolute;
@@ -553,7 +557,7 @@ body {
   }
 }
 .our__column__service-wrapper {
-  margin: 0 0 10px 0; 
+  margin: 0 0 10px 0;
   display: flex;
   align-items: center;
   &:last-child {
@@ -576,6 +580,130 @@ body {
   padding: 0 14px 0 0;
   font-weight: bold;
   line-height: 150%;
+}
+
+/*Get*/ ////////////////////////////////////////////////////////////////////////////////////////////////
+
+.get {
+  padding: 0 0 120px 0;
+}
+.get__form {
+  margin: -145px 0 0 0;
+  padding: 70px 20px 68px 20px;
+  background: #ff6e40;
+}
+.get__form__title {
+  margin: 0 0 12px 0;
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 133%;
+  color: #000;
+  text-align: center;
+}
+.get__form__subtitle {
+  margin: 0 0 35px 0;
+  font-size: 21px;
+  line-height: 143%;
+  color: #3b322d;
+  text-align: center;
+}
+.get__form__row {
+  margin: 0 0px 25px 0px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.form__input {
+  margin: 0 20px 0px 0;
+  padding: 23px 20px 22px 20px;
+  background: #ff6e40;
+  border: 1px solid #000000;
+  width: 323px;
+  height: 68px;
+  font-family: Fira Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 135%;
+  color: #FFFFFF;
+  &::placeholder {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 135%;
+    color: #ffffff;
+  }
+}
+.get__form__input-phone {
+}
+.get__form__input-email {
+}
+.get__form__btn {
+  background: #000000;
+  width: 194px;
+  height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 152%;
+  color: #fff;
+}
+.get__form__checkbox {
+  position: relative;
+  left: 30%;
+}
+.get__form__checkbox__input {
+  -webkit-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+.get__form__checkbox__label {
+  padding: 0 0 0 21px;
+  font-size: 13px;
+  line-height: 134.09%;
+  color: #EFE7E2;
+  a {
+    color: inherit;
+    text-decoration: underline;
+  }
+}
+.get__form__checkbox__label:before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #000000;
+  position: absolute;
+  top: 3px;
+  left: 0;
+  z-index: 1;
+  transition: background 0.3s ease 0s;
+}
+.get__form__checkbox__label:after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 6px;
+  background: url("../img/get/1.svg") no-repeat;
+  position: absolute;
+  top: 5.55px;
+  left: 2px;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.3s ease 0s;
+}
+.get__form__checkbox__input:checked + .get__form__checkbox__label::before {
+  background: #000000;
+}
+.get__form__checkbox__input:checked + .get__form__checkbox__label::after {
+  opacity: 1;
 }
 
 /*Footer*/ //////////////////////////////////////////////////////////////
