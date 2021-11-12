@@ -727,13 +727,13 @@ body {
   width: 480px;
 }
 .contacts__body__title {
-  margin: 0 0 34px 0; 
+  margin: 0 0 34px 0;
   text-align: left;
 }
 .title {
 }
 .contacts__body__item {
-  margin: 0 0 25px 0; 
+  margin: 0 0 25px 0;
   display: flex;
   align-items: center;
   &:last-child {
@@ -751,6 +751,12 @@ body {
   justify-content: center;
 }
 .contacts__body__item__text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 143%;
+  color: #ffffff;
 }
 .contacts__text {
   padding: 57px 0;
