@@ -294,7 +294,7 @@ body {
 }
 .mens-bottom__btn {
   &:hover {
-    cursor: url('../img/mens/ellipse.png'), auto;
+    cursor: url("../img/mens/ellipse.png"), auto;
   }
 }
 .btn_orange {
@@ -425,7 +425,7 @@ body {
 .about__btn1 {
   margin: 0 30px 0 0;
   &:hover {
-    cursor: url('../img/mens/ellipse.png'), auto;
+    cursor: url("../img/mens/ellipse.png"), auto;
   }
 }
 .btn_orange {
@@ -627,7 +627,7 @@ body {
   font-weight: normal;
   font-size: 17px;
   line-height: 135%;
-  color: #FFFFFF;
+  color: #ffffff;
   &::placeholder {
     font-family: Fira Sans;
     font-style: normal;
@@ -668,7 +668,7 @@ body {
   padding: 0 0 0 21px;
   font-size: 13px;
   line-height: 134.09%;
-  color: #EFE7E2;
+  color: #efe7e2;
   a {
     color: inherit;
     text-decoration: underline;
@@ -706,10 +706,60 @@ body {
   opacity: 1;
 }
 
+/*Contacts*/ ///////////////////////////////////////////////////
+
+.contacts {
+}
+.contacts__map {
+  height: 650px;
+  background: url("../img/contacts/bk1.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.contacts__map__row {
+  height: 650px;
+  display: flex;
+  align-items: center;
+}
+.contacts__body {
+  padding: 65px 38px 80px 57px;
+  background: #251d1a;
+  width: 480px;
+}
+.contacts__body__title {
+  margin: 0 0 34px 0; 
+  text-align: left;
+}
+.title {
+}
+.contacts__body__item {
+  margin: 0 0 25px 0; 
+  display: flex;
+  align-items: center;
+  &:last-child {
+    margin: 0;
+  }
+}
+.contacts__body__item__img {
+  margin: 0 31px 0 0;
+  width: 54px;
+  height: 54px;
+  background: #ff6e40;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contacts__body__item__text {
+}
+.contacts__text {
+  padding: 57px 0;
+  text-align: center;
+}
+
 /*Footer*/ //////////////////////////////////////////////////////////////
 
 .footer {
-  display: none;
   padding: 41px 0 40px 0;
   background: #000000;
 }

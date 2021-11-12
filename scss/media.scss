@@ -121,6 +121,33 @@
   }
   .column__title {
     text-align: center;
+    font-size: 18px;
+  }
+  .column__text {
+    font-size: 14px;
+  }
+  .about {
+    padding: 50px 0;
+  }
+  .title {
+    font-size: 30px;
+  }
+  .subtitle {
+    font-size: 14px;
+  }
+  .about__row {
+    margin: 0 -10px 25px -10px;
+  }
+  .about__subtitle {
+    margin: 0 auto 30px auto;
+  }
+  .btn_orange {
+    padding: 15px 15px;
+    font-size: 18px;
+    text-align: center;
+  }
+  .btn_transparent {
+    padding: 15px;
   }
   .about__columns {
     margin: 0;
@@ -142,6 +169,15 @@
   .about__btn1 {
     margin: 0 0px 20px 0;
   }
+  .testimonials {
+    padding: 0 0 80px 0;
+  }
+  .testimonials__title {
+    margin: 0 0 15px 0;
+  }
+  .testimonials__subtitle {
+    margin: 0 auto 30px auto;
+  }
   .get__form {
     margin: -145px -20px 0 -20px;
   }
@@ -151,9 +187,58 @@
   .get__form__subtitle {
     font-size: 18px;
   }
+  .our {
+    padding: 80px 0 200px 0;
+  }
+  .get {
+    padding: 0 0 100px 0;
+  }
+  .contacts__body {
+    //padding: 45px 20px 50px 50px;
+  }
+  .contacts__body__item__img {
+    margin: 0 25px 0 0;
+  }
+  .contacts__body__title {
+    margin: 0 0 25px 0;
+  }
+  .contacts__text {
+    padding: 35px 0;
+    font-size: 14px;
+  }
+  .footer {
+    padding: 25px 0;
+  }
+  .footer__row {
+    p {
+      margin: 0 0 12px 0;
+    }
+  }
 }
 @media (max-width: 500px) {
+  .header__row {
+    height: 80px;
+  }
   .form__input {
     width: 100%;
+  }
+  .get {
+    padding: 0;
+  }
+  .contacts__map {
+    height: auto;
+    background: #251d1a;
+  }
+  .contacts__map__row {
+    height: auto;
+  }
+  .contacts__body__title {
+    text-align: center;
+  }
+  .contacts__body {
+    padding: 65px 0px 80px 0px;
+  }
+  .contacts__body__item__img {
+    margin: 0 20px 0 0;
   }
 }
