@@ -566,13 +566,22 @@
                      Expand Call-to-Action Details
                   </div>
                   <div class="get__form__row">
-                     <input type="tel" name="userphone" class="get__form__input-phone form__input" placeholder="+1 (___) ___-__-__" required oninvalid="this.setCustomValidity(' ')" oninput="setCustomValidity('')">
-                     <input type="email" name="useremail" class="get__form__input-email form__input" placeholder="Email" required oninvalid="this.setCustomValidity(' ')" oninput="setCustomValidity('')">
+                     <div class="get__form__group">
+                        <input type="tel" name="userphone" class="get__form__input-phone form__input" placeholder="+1 (___) ___-__-__" required oninvalid="this.setCustomValidity(' ')" oninput="setCustomValidity('')">
+                        <div class="error" id="error1"></div>
+                     </div>
+
+                     <div class="get__form__group">
+                        <input type="email" name="useremail" class="get__form__input-email form__input" placeholder="Email" required oninvalid="this.setCustomValidity(' ')" oninput="setCustomValidity('')">
+                        <div class="error" id="error2"></div>
+                     </div>
+
                      <button type="submit" class="get__form__btn">Book now</button>
-                  </div>
-                  <div class="get__form__checkbox">
-                     <input class="get__form__checkbox__input" type="checkbox" id="checkbox_1" required>
-                     <label class="get__form__checkbox__label" for="checkbox_1">By clicking on the button, you agree to the <a href="">terms of processing personal data</a></label>
+                     
+                     <div class="get__form__checkbox">
+                        <input class="get__form__checkbox__input" type="checkbox" id="checkbox_1" required>
+                        <label class="get__form__checkbox__label" for="checkbox_1">By clicking on the button, you agree to the <a href="">terms of processing personal data</a></label>
+                     </div>
                   </div>
                </form>
             </div>
