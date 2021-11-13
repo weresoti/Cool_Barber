@@ -42,11 +42,13 @@ inputPhone.addEventListener("input", function (event) {
   if (phoneTest(inputPhone)) {
     document.getElementById("error1").innerHTML ="<p></p>"
     inputPhone.style.border = "1px solid #4FE18A"
+    inputPhone.style.background = "url('../img/get/2.svg') 95% center no-repeat"
   }
   if (!phoneTest(inputPhone)) {
     document.getElementById("error1").innerHTML ="<p>Error</p>"
     document.getElementById("error2").style.marginTop = "5px"
     inputPhone.style.border = "1px solid #E05263"
+    inputPhone.style.background = "inherit"
   }
 })
 
@@ -54,11 +56,13 @@ inputEmail.addEventListener("input", function (event) {
   if (emailTest(inputEmail)) {
     document.getElementById("error2").innerHTML ="<p></p>"
     inputEmail.style.border = "1px solid #4FE18A"
+    inputEmail.style.background = "url('../img/get/2.svg') 95% center no-repeat"
   }
   if (!emailTest(inputEmail)) {
     document.getElementById("error2").innerHTML ="<p>Error</p>"
     document.getElementById("error2").style.marginTop = "5px"
     inputEmail.style.border = "1px solid #E05263"
+    inputEmail.style.background = "inherit"
   }
 })
 

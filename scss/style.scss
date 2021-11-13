@@ -470,6 +470,7 @@ body {
 }
 .swiper-slide__img {
   margin: 0 0 24px 0;
+  display: inline-block;
   width: 280px;
   height: 280px;
   img {
@@ -620,7 +621,7 @@ body {
 }
 .form__input {
   margin: 0 20px 0px 0;
-  padding: 23px 20px 22px 20px;
+  padding: 23px 30px 22px 20px;
   background: #ff6e40;
   border: 1px solid #000000;
   width: 323px;
